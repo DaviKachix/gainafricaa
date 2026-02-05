@@ -77,22 +77,6 @@ export function HeroSection() {
           <motion.h1 className="mt-3 text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-tight text-white drop-shadow-2xl">
             Integrated for Mission
           </motion.h1>
-
-          {/* Theme & Invitation */}
-          <motion.p className="mt-4 text-lg sm:text-xl max-w-3xl leading-relaxed text-white/90">
-            <span className="font-bold text-yellow-400 drop-shadow-md">Theme:</span>{" "}
-            <span className="font-extrabold drop-shadow-lg text-white">
-              Bringing departments and teams into one coordinated mission strategy.
-            </span>
-            <br />
-            <span className="font-bold text-blue-950 drop-shadow-lg">
-              Bring your team. Come ready to learn, collaborate, and build practical mission plans.
-            </span>{" "}
-            <span className="font-semibold text-white drop-shadow-md">
-              Return home prepared to strengthen the church’s mission impact in your territory.
-            </span>
-          </motion.p>
-
           {/* Location & Dates */}
           <motion.div className="mt-6 flex flex-col gap-4 sm:flex-row sm:items-center">
             <div className="flex items-center gap-2">
