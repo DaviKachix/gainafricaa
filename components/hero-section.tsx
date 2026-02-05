@@ -109,9 +109,7 @@ export function HeroSection() {
                 <p className="text-sm uppercase tracking-wide mt-1 text-white drop-shadow-sm">{unit}</p>
               </motion.div>
             ))}
-          </motion.div>
-
-          {/* CTA Buttons */}
+          </motion.div>  {/* CTA Buttons */}
           <motion.div className="mt-12 flex flex-col gap-4 sm:flex-row sm:items-center">
             <Button
               size="lg"
