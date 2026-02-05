@@ -109,26 +109,7 @@ export function HeroSection() {
                 <p className="text-sm uppercase tracking-wide mt-1 text-white drop-shadow-sm">{unit}</p>
               </motion.div>
             ))}
-          </motion.div>  {/* CTA Buttons */}
-          <motion.div className="mt-12 flex flex-col gap-4 sm:flex-row sm:items-center">
-            <Button
-              size="lg"
-              asChild
-              className="bg-blue-950 text-white font-extrabold px-8 py-4 rounded-2xl shadow-2xl hover:shadow-3xl hover:scale-105 transition-all duration-300"
-            >
-              <Link href="https://www.gain.africa" target="_blank" className="flex items-center gap-2">
-                Register Now <ArrowRight className="h-5 w-5 inline-block" />
-              </Link>
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              asChild
-              className="border-white/50 text-white hover:bg-white/10 bg-transparent font-semibold px-8 py-4 rounded-2xl transition-all duration-300"
-            >
-              <Link href="/events">View Past Events</Link>
-            </Button>
-          </motion.div>
+         
         </motion.div>
       </div>
     </section>
