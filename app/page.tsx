@@ -93,7 +93,7 @@ export default function Page() {
       {[
         { src: "/darkgain.png", alt: "GAiN Africa" },
         { src: "/OneVoice27.jpeg", alt: "OneVoice27" },
-        { src: "/SDA Logo.png", alt: "Seventh-day Adventist" },
+        { src: "/SDA-Logo.png", alt: "Seventh-day Adventist" },
         { src: "/Hope Channel.png", alt: "Hope Channel" },
       ].map((icon, idx) => (
         <motion.a
