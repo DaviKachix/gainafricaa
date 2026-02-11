@@ -9,6 +9,10 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Mail, User, Calendar, CheckCircle, Hourglass } from "lucide-react";
 import GAinExtraSections from "@/components/GAinExtraSections";
+import { cn } from "@/lib/utils";
+import OneVoice27Section from "@/components/OneVoice27Section";
+import MissionMediaSection from "@/components/MissionMediaSection";
+
 
 export default function Page() {
   const registrationSteps = [
@@ -35,167 +39,280 @@ export default function Page() {
         >
           
           <HeroSection />
-
 {/* About GAiN */}
-<section className="relative py-36 bg-gray-50 overflow-hidden">
-  <div className="max-w-6xl mx-auto px-6 text-center relative z-10">
+<section className="relative overflow-hidden bg-gray-50 py-20 sm:py-24 lg:py-28">
+  {/* Soft background accents (calm, SDA-friendly) */}
+  <div className="absolute inset-0">
+    <div className="absolute -top-24 left-1/2 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-blue-900/10 blur-3xl" />
+    <div className="absolute -bottom-32 -left-24 h-[420px] w-[420px] rounded-full bg-slate-900/10 blur-3xl" />
+    <div className="absolute inset-0 bg-[radial-gradient(900px_420px_at_50%_0%,rgba(2,6,23,0.06),transparent_60%)]" />
+  </div>
+
+  <div className="relative z-10 mx-auto max-w-6xl px-4 sm:px-6 text-center">
     {/* Heading */}
     <motion.h2
-      initial={{ opacity: 0, y: 20 }}
+      initial={{ opacity: 0, y: 18 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.8 }}
-      className="text-5xl sm:text-6xl font-extrabold mb-6 leading-tight text-gray-900"
+      viewport={{ once: true, amount: 0.5 }}
+      transition={{ duration: 0.7 }}
+      className="text-3xl sm:text-4xl lg:text-5xl font-black leading-tight text-gray-900"
     >
-      About <span className="text-blue-900">GAiN Africa</span> <br />
-      <span className="text-gray-800 font-semibold">2026 Conference</span>
+      About <span className="text-blue-900">GAiN Africa</span>
+      <span className="block mt-2 text-gray-800 font-semibold text-xl sm:text-2xl lg:text-3xl">
+        2026 Conference
+      </span>
     </motion.h2>
 
     {/* Subtitle */}
     <motion.p
-      initial={{ opacity: 0, y: 20 }}
+      initial={{ opacity: 0, y: 18 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ delay: 0.1, duration: 0.8 }}
-      className="text-gray-700 text-lg sm:text-xl md:text-2xl leading-relaxed max-w-4xl mx-auto mb-20"
+      viewport={{ once: true, amount: 0.5 }}
+      transition={{ delay: 0.08, duration: 0.7 }}
+      className="mt-6 text-gray-700 text-base sm:text-lg lg:text-xl leading-relaxed max-w-4xl mx-auto"
     >
-      GAiN Africa brings together <span className="font-semibold text-blue-900">Seventh-Day Adventist media</span> 
-      and <span className="font-semibold text-gray-900">communication professionals</span> from across Africa to 
-      <span className="font-semibold text-gray-800"> share knowledge</span>, 
-      <span className="font-semibold text-blue-900"> build partnerships</span>, and 
-      <span className="font-semibold text-gray-900"> advance the mission of the Church</span>. 
-      Our annual conference features <span className="font-semibold text-gray-800">keynote presentations</span>, 
-      <span className="font-semibold text-blue-900"> hands-on workshops</span>, and 
-      <span className="font-semibold text-gray-900"> strategic networking opportunities</span>.
+      GAiN Africa brings together{" "}
+      <span className="font-semibold text-blue-900">Seventh-day Adventist media</span> and{" "}
+      <span className="font-semibold text-gray-900">communication professionals</span> from across Africa to{" "}
+      <span className="font-semibold text-gray-800">share knowledge</span>,{" "}
+      <span className="font-semibold text-blue-900">build partnerships</span>, and{" "}
+      <span className="font-semibold text-gray-900">advance the mission of the Church</span>. Our annual conference
+      features <span className="font-semibold text-gray-800">keynotes</span>,{" "}
+      <span className="font-semibold text-blue-900">hands-on workshops</span>, and{" "}
+      <span className="font-semibold text-gray-900">strategic networking</span>.
     </motion.p>
 
-    {/* Icons Row */}
+    {/* Logos Row (each logo in a round card) */}
     <motion.div
-      className="mt-12 flex justify-center items-center gap-12 flex-wrap"
+      className="mt-10 sm:mt-12 flex flex-wrap justify-center gap-4 sm:gap-6"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.8, delay: 0.4 }}
+      viewport={{ once: true, amount: 0.4 }}
+      transition={{ duration: 0.7, delay: 0.12 }}
     >
       {[
-        { src: "/icon.jpg", alt: "GAiN Africa" },
+        { src: "/darkgain.png", alt: "GAiN Africa" },
         { src: "/OneVoice27.jpeg", alt: "OneVoice27" },
-        { src: "/SDA Logo.png", alt: "Seventh-Day Adventist" },
+        { src: "/SDA Logo.png", alt: "Seventh-day Adventist" },
         { src: "/Hope Channel.png", alt: "Hope Channel" },
       ].map((icon, idx) => (
-        <a
+        <motion.a
           key={idx}
           href={icon.src}
           target="_blank"
-          className="hover:scale-105 transition-transform duration-300"
+          rel="noreferrer"
+          whileHover={{ y: -2, scale: 1.03 }}
+          whileTap={{ scale: 0.98 }}
+          className="group"
+          aria-label={icon.alt}
         >
-          <img src={icon.src} alt={icon.alt} className="h-20 w-20 object-contain opacity-90" />
-        </a>
+          <div
+            className={[
+              "h-16 w-16 sm:h-20 sm:w-20 lg:h-24 lg:w-24",
+              "rounded-full overflow-hidden",
+              "bg-white/80 backdrop-blur",
+              "ring-1 ring-black/10",
+              "shadow-[0_10px_30px_rgba(0,0,0,0.10)]",
+              "transition",
+              "group-hover:ring-blue-900/25",
+              "group-hover:shadow-[0_16px_40px_rgba(0,0,0,0.14)]",
+            ].join(" ")}
+          >
+            <img
+              src={icon.src}
+              alt={icon.alt}
+              className="h-full w-full object-contain p-3 sm:p-3.5 opacity-95"
+              loading="lazy"
+            />
+          </div>
+
+          {/* Optional label (subtle, SDA-friendly) */}
+          <div className="mt-2 text-[11px] sm:text-xs font-semibold text-gray-600 group-hover:text-gray-800 transition">
+            {icon.alt}
+          </div>
+        </motion.a>
       ))}
+    </motion.div>
+
+    {/* Small divider / calm note */}
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ delay: 0.25, duration: 0.7 }}
+      className="mt-10 flex items-center justify-center gap-3 text-xs sm:text-sm text-gray-500"
+    >
+      <span className="h-px w-10 bg-gray-300" />
+      <span className="font-semibold tracking-wide uppercase">
+        United in Mission • Excellence • Service
+      </span>
+      <span className="h-px w-10 bg-gray-300" />
     </motion.div>
   </div>
 
-  {/* Background Faint Icons */}
+  {/* Background floating logos (fainter + round + calmer motion) */}
   {[
     "/icon.jpg",
     "/OneVoice27.jpeg",
     "/SDA Logo.png",
     "/Hope Channel.png",
   ].map((src, idx) => (
-    <motion.img
+    <motion.div
       key={idx}
-      src={src}
-      alt={`bg-icon-${idx}`}
-      className={`absolute h-36 w-36 opacity-10 ${
+      className={cn(
+        "pointer-events-none absolute opacity-[0.07]",
         idx === 0
-          ? "top-10 left-10"
+          ? "top-10 left-6 sm:left-10"
           : idx === 1
-          ? "top-20 right-10"
+          ? "top-20 right-6 sm:right-10"
           : idx === 2
-          ? "bottom-20 left-20"
-          : "bottom-10 right-20"
-      }`}
-      animate={{ rotate: [0, 5, -5, 0], scale: [1, 1.05, 1, 1.05] }}
+          ? "bottom-16 left-10 sm:left-16"
+          : "bottom-10 right-10 sm:right-16"
+      )}
+      animate={{ y: [0, -8, 0], rotate: [0, 3, 0] }}
       transition={{ repeat: Infinity, duration: 10 + idx * 2, ease: "easeInOut" }}
-    />
+    >
+      <div className="h-20 w-20 sm:h-28 sm:w-28 rounded-full overflow-hidden ring-1 ring-black/10 bg-white/40 backdrop-blur">
+        <img src={src} alt={`bg-icon-${idx}`} className="h-full w-full object-contain p-4" />
+      </div>
+    </motion.div>
   ))}
 </section>
 
+<OneVoice27Section />
+
           {/* Who to attend & What Section */}
           <WhoWhatSection />
+{/* Registration Process (SDA-friendly, calm + modern) */}
+<section className="relative overflow-hidden bg-gray-50 py-20 sm:py-24 lg:py-28">
+  {/* Soft background accents */}
+  <div className="absolute inset-0">
+    <div className="absolute -top-28 left-1/2 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-blue-900/10 blur-3xl" />
+    <div className="absolute -bottom-32 -right-24 h-[420px] w-[420px] rounded-full bg-slate-900/10 blur-3xl" />
+    <div className="absolute inset-0 bg-[radial-gradient(900px_420px_at_50%_0%,rgba(2,6,23,0.06),transparent_60%)]" />
+  </div>
 
- {/* Registration Process */}
-<section className="relative py-32 bg-gray-50 overflow-hidden">
-  <div className="max-w-6xl mx-auto px-6 text-center relative z-10">
+  <div className="relative z-10 mx-auto max-w-6xl px-4 sm:px-6 text-center">
     {/* Heading */}
     <motion.h2
-      initial={{ opacity: 0, y: 20 }}
+      initial={{ opacity: 0, y: 18 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.8 }}
-      className="text-4xl sm:text-5xl font-extrabold mb-6 text-gray-900 leading-tight"
+      viewport={{ once: true, amount: 0.5 }}
+      transition={{ duration: 0.7 }}
+      className="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 tracking-tight"
     >
       Registration Process
     </motion.h2>
 
     {/* Subtitle */}
     <motion.p
-      initial={{ opacity: 0, y: 20 }}
+      initial={{ opacity: 0, y: 18 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ delay: 0.1, duration: 0.8 }}
-      className="text-gray-700 mb-16 text-lg sm:text-xl max-w-3xl mx-auto"
+      viewport={{ once: true, amount: 0.5 }}
+      transition={{ delay: 0.08, duration: 0.7 }}
+      className="mt-4 text-gray-700 text-base sm:text-lg lg:text-xl leading-relaxed max-w-3xl mx-auto"
     >
-      Follow these simple steps to secure your spot at <span className="font-semibold text-gray-900">GAiN Africa 2026</span>.
+      Simple steps to secure your place at{" "}
+      <span className="font-semibold text-gray-900">GAiN Africa 2026</span>.
     </motion.p>
 
-    {/* Horizontal Scrollable Cards */}
+    {/* Step Cards (grid on desktop, horizontal scroll on mobile) */}
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
+      initial={{ opacity: 0, y: 18 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.8 }}
-      className="relative overflow-x-auto flex gap-6 pb-6 snap-x snap-mandatory"
+      viewport={{ once: true, amount: 0.35 }}
+      transition={{ duration: 0.7, delay: 0.1 }}
+      className="mt-10"
     >
-      {registrationSteps.map((step, i) => {
-        const Icon = step.icon;
-        return (
-          <div
-            key={i}
-            className="flex-shrink-0 w-64 sm:w-72 md:w-80 snap-start bg-white rounded-2xl shadow-md p-8 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105"
-          >
-            {/* Icon */}
-            <div className="bg-gray-100 text-gray-900 p-5 rounded-full mb-4 flex items-center justify-center">
-              <Icon className="w-8 h-8" />
-            </div>
+      {/* Mobile: swipeable row */}
+      <div className="lg:hidden -mx-4 px-4 overflow-x-auto pb-4 snap-x snap-mandatory">
+        <div className="flex gap-4 min-w-max">
+          {registrationSteps.map((step, i) => {
+            const Icon = step.icon;
+            return (
+              <motion.div
+                key={i}
+                whileHover={{ y: -2 }}
+                className="snap-start w-[280px] rounded-3xl bg-white/90 ring-1 ring-black/10 shadow-[0_12px_30px_rgba(0,0,0,0.08)] p-6 text-left"
+              >
+                <div className="flex items-start gap-4">
+                  <div className="h-12 w-12 rounded-full bg-blue-900/10 ring-1 ring-blue-900/15 grid place-items-center">
+                    <Icon className="h-6 w-6 text-blue-900" />
+                  </div>
+                  <div className="min-w-0">
+                    <div className="text-xs font-semibold tracking-[0.18em] uppercase text-gray-500">
+                      Step {i + 1}
+                    </div>
+                    <h3 className="mt-1 text-lg font-bold text-gray-900">{step.title}</h3>
+                  </div>
+                </div>
 
-            {/* Title */}
-            <h3 className="text-lg sm:text-xl font-semibold mb-2 text-gray-900">{step.title}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-gray-600">{step.desc}</p>
+              </motion.div>
+            );
+          })}
+        </div>
+      </div>
 
-            {/* Description */}
-            <p className="text-gray-600 text-sm sm:text-base">{step.desc}</p>
-          </div>
-        );
-      })}
+      {/* Desktop: clean grid */}
+      <div className="hidden lg:grid grid-cols-3 gap-6 text-left">
+        {registrationSteps.map((step, i) => {
+          const Icon = step.icon;
+          return (
+            <motion.div
+              key={i}
+              whileHover={{ y: -3 }}
+              className="rounded-3xl bg-white/90 ring-1 ring-black/10 shadow-[0_14px_40px_rgba(0,0,0,0.08)] p-7 transition"
+            >
+              <div className="flex items-start justify-between gap-4">
+                <div className="flex items-start gap-4">
+                  <div className="h-12 w-12 rounded-full bg-blue-900/10 ring-1 ring-blue-900/15 grid place-items-center">
+                    <Icon className="h-6 w-6 text-blue-900" />
+                  </div>
+                  <div>
+                    <div className="text-xs font-semibold tracking-[0.18em] uppercase text-gray-500">
+                      Step {i + 1}
+                    </div>
+                    <h3 className="mt-1 text-lg font-bold text-gray-900">{step.title}</h3>
+                  </div>
+                </div>
+
+                <div className="h-10 w-10 rounded-2xl bg-gray-50 ring-1 ring-black/5 grid place-items-center text-sm font-bold text-gray-700">
+                  {i + 1}
+                </div>
+              </div>
+
+              <p className="mt-4 text-sm leading-relaxed text-gray-600">{step.desc}</p>
+            </motion.div>
+          );
+        })}
+      </div>
     </motion.div>
 
-    {/* CTA Button */}
+    {/* CTA */}
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
+      initial={{ opacity: 0, y: 18 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ delay: 1, duration: 0.8 }}
-      className="mt-16"
+      viewport={{ once: true, amount: 0.5 }}
+      transition={{ delay: 0.18, duration: 0.7 }}
+      className="mt-10 sm:mt-12 flex flex-col items-center gap-3"
     >
-      <Button asChild className="inline-flex items-center gap-3 px-12 py-5 bg-gray-900 text-white font-semibold rounded-2xl hover:bg-gray-800 shadow transition-all duration-300 text-lg">
-        <a href="/register">
-          Start Registration <ArrowRight className="w-6 h-6" />
+      <Button
+        asChild
+        className="h-11 rounded-2xl px-6 text-sm sm:text-base font-semibold bg-blue-900 hover:bg-blue-900/90 shadow-lg shadow-blue-900/10"
+      >
+        <a href="/register" className="inline-flex items-center gap-2">
+          Start Registration <ArrowRight className="h-4 w-4" />
         </a>
       </Button>
+
+      <p className="text-xs sm:text-sm text-gray-500">
+        Need help? Visit <a className="underline underline-offset-4" href="/resources">Resources</a> for guidance.
+      </p>
     </motion.div>
   </div>
 </section>
-
+<MissionMediaSection />
 <GAinExtraSections />  {/* Purpose, Event Details, Invitation */}
           {/* Final CTA */}
   <section className="py-28 bg-gray-50">
@@ -228,7 +345,6 @@ export default function Page() {
 
   </div>
 </section>
-
 
         </motion.main>
       </AnimatePresence>
