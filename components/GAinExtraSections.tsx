@@ -181,9 +181,6 @@ export default function GAiNExtraSections() {
                 </a>
               </div>
 
-              <div className="mt-6 text-xs text-black/55">
-                Tip: On mobile, you can swipe to view the next card.
-              </div>
             </motion.article>
           </div>
         </motion.div>

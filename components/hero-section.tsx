@@ -115,22 +115,6 @@ export function HeroSection() {
             variants={reduceMotion ? undefined : stagger}
             className="w-full max-w-3xl"
           >
-            {/* Badge */}
-            <motion.div
-              variants={reduceMotion ? undefined : fadeUp}
-              className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1.5 ring-1 ring-white/20 backdrop-blur"
-              whileHover={hoverLift}
-              transition={{ duration: 0.2, ease: easeOutSoft }}
-            >
-              {/* Keep icon static (no pulse) */}
-              <span className="grid h-6 w-6 place-items-center rounded-full bg-blue-400/20 ring-1 ring-blue-200/25">
-                <Sparkles className="h-3.5 w-3.5 text-blue-200" />
-              </span>
-
-              <span className="text-[11px] sm:text-xs font-semibold tracking-wide uppercase text-white/90">
-                GAiN Tanzania • 2026
-              </span>
-            </motion.div>
 
             {/* Title */}
             <motion.h1
@@ -172,7 +156,7 @@ export function HeroSection() {
               >
                 <Calendar className="h-4 w-4 text-blue-200" />
                 <span className="text-sm font-semibold text-white/90">
-                  Apr 1–4, 2026 <span className="text-white/65 font-medium">(Mar 31 pre-event)</span>
+                  Apr 1–4, 2026 
                 </span>
               </motion.div>
             </motion.div>
@@ -182,16 +166,11 @@ export function HeroSection() {
               variants={reduceMotion ? undefined : fadeUp}
               className="mt-6 flex flex-col sm:flex-row gap-2.5"
             >
-              {/* Intentionally unchanged (your buttons can go here) */}
             </motion.div>
 
             {/* Countdown */}
             <motion.div variants={reduceMotion ? undefined : fadeUp} className="mt-8">
               <div className="flex items-center justify-between gap-3">
-                <div className="text-[11px] font-semibold uppercase tracking-[0.16em] text-white/65">
-                  Countdown
-                </div>
-                <div className="text-[11px] text-white/45">EAT (UTC+3)</div>
               </div>
 
               <div className="mt-3 grid grid-cols-4 gap-2 sm:gap-3 max-w-md">
