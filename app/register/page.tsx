@@ -278,7 +278,6 @@ export default function RegisterPage() {
         <option value="">Select</option>
         <option value="male">Male</option>
         <option value="female">Female</option>
-        <option value="other">Other</option>
       </select>
       {errors.gender && (
         <span className="mt-1 text-red-500 text-sm">{errors.gender}</span>
