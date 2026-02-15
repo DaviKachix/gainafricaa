@@ -22,4 +22,13 @@ export default defineSchema({
   })
   
   .index("by_email", ["email"]),
+
+  presentations: defineTable({
+    title: v.string(),
+    speaker: v.optional(v.string()),
+    eventId: v.string(), 
+    description: v.optional(v.string()),
+    startTime: v.optional(v.string()),
+    endTime: v.optional(v.string()),
+  }).index("by_event", ["eventId"]),
 });

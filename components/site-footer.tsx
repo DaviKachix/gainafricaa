@@ -1,129 +1,152 @@
+"use client";
+
 import Link from "next/link";
-import {
-  FaFacebookF,
-  FaTwitter,
-  FaInstagram,
-  FaLinkedinIn,
-} from "react-icons/fa";
+import Image from "next/image";
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 export function SiteFooter() {
+  const year = new Date().getFullYear();
+
   return (
     <footer className="relative bg-black text-white overflow-hidden">
-      {/* Soft Background Accent */}
+      {/* Background */}
       <div className="absolute inset-0">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 h-[400px] w-[600px] bg-blue-900/10 blur-3xl rounded-full" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 h-[420px] w-[760px] bg-blue-900/12 blur-3xl rounded-full" />
+        <div className="absolute -bottom-56 right-[-140px] h-[560px] w-[560px] bg-red-600/10 blur-3xl rounded-full" />
+        <div className="absolute inset-0 bg-[radial-gradient(900px_420px_at_50%_0%,rgba(255,255,255,0.06),transparent_60%)]" />
       </div>
 
-      <div className="relative mx-auto max-w-7xl px-6 py-16 lg:px-8">
-        <div className="grid grid-cols-1 gap-12 md:grid-cols-4">
-          
-          {/* Logo & Mission */}
-          <div className="md:col-span-2">
-            <Link
-              href="/"
-              className="flex items-center gap-3 group"
-            >
-              {/* Round Logo */}
-              <div className="h-12 w-12 rounded-full overflow-hidden bg-white/10 ring-1 ring-white/20 grid place-items-center shadow-lg">
-                {/* Replace with real logo */}
-                <span className="text-xs font-black tracking-tight text-white">
-                  GAiN
-                </span>
+      <div className="relative mx-auto max-w-7xl px-6 py-14 sm:py-16 lg:px-8">
+        <div className="grid grid-cols-1 gap-12 md:grid-cols-12">
+          {/* Brand */}
+          <div className="md:col-span-5">
+            <Link href="/" className="inline-flex items-center gap-3 group">
+              {/* Logo */}
+              <div className="relative h-12 w-12 rounded-full overflow-hidden bg-white/10 ring-1 ring-white/18 shadow-[0_14px_32px_rgba(0,0,0,0.45)]">
+                <Image
+                  src="/icon.jpg"
+                  alt="GAiN Tanzania"
+                  fill
+                  priority
+                  className="object-cover"
+                />
+                {/* red accent */}
+                <span className="pointer-events-none absolute inset-0 rounded-full ring-2 ring-red-600/20" />
               </div>
 
-              <div>
-                <div className="text-2xl font-extrabold tracking-tight">
-                  GAiN Africa
+              {/* Name */}
+              <div className="leading-tight">
+                <div className="text-2xl font-extrabold tracking-tight text-white">
+                  GAiN <span className="text-white/90">Tanzania</span>
                 </div>
-                <div className="text-xs uppercase tracking-[0.2em] text-white/60 font-semibold">
+                <div className="mt-1 text-[11px] uppercase tracking-[0.22em] text-white/55 font-semibold">
                   Integrated for Mission
                 </div>
               </div>
             </Link>
 
-            <p className="mt-6 text-sm sm:text-base text-white/70 max-w-md leading-relaxed">
-              Global Adventist Internet Network — bringing together Adventist
-              media and communication professionals across Africa to strengthen
-              collaboration and advance the mission of the Church.
+            <p className="mt-5 text-sm sm:text-base text-white/70 max-w-md leading-relaxed">
+              Global Adventist Internet Network — bringing together Adventist media and communication professionals
+              to strengthen collaboration and advance the mission of the Church.
             </p>
 
-            {/* Social Icons */}
-            <div className="mt-6 flex gap-3">
-              {[FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn].map(
-                (Icon, i) => (
-                  <a
-                    key={i}
-                    href="#"
-                    className="h-10 w-10 rounded-full bg-white/5 ring-1 ring-white/15 flex items-center justify-center text-white/70 hover:text-white hover:bg-blue-900/40 transition"
-                  >
-                    <Icon size={16} />
-                  </a>
-                )
-              )}
+            {/* Social */}
+            <div className="mt-6 flex items-center gap-3">
+              {[
+                { Icon: FaFacebookF, label: "Facebook" },
+                { Icon: FaTwitter, label: "Twitter" },
+                { Icon: FaInstagram, label: "Instagram" },
+                { Icon: FaLinkedinIn, label: "LinkedIn" },
+              ].map(({ Icon, label }, i) => (
+                <a
+                  key={i}
+                  href="#"
+                  aria-label={label}
+                  className="h-10 w-10 rounded-full bg-white/5 ring-1 ring-white/14 flex items-center justify-center text-white/70
+                             hover:text-white hover:bg-white/10 hover:ring-red-600/30 transition"
+                >
+                  <Icon size={16} />
+                </a>
+              ))}
             </div>
           </div>
 
-          {/* Quick Links */}
-          <div>
-            <h3 className="text-xs font-bold uppercase tracking-[0.2em] text-white/70">
+          {/* Links */}
+          <div className="md:col-span-3">
+            <h3 className="text-[11px] font-bold uppercase tracking-[0.22em] text-white/60">
               Quick Links
             </h3>
-            <ul className="mt-6 space-y-3 text-sm">
-              <li>
-                <Link href="/events" className="text-white/70 hover:text-white transition">
-                  Events
-                </Link>
-              </li>
-              <li>
-                <Link href="/presenters" className="text-white/70 hover:text-white transition">
-                  Presenters
-                </Link>
-              </li>
-              <li>
-                <Link href="/resources" className="text-white/70 hover:text-white transition">
-                  Resources
-                </Link>
-              </li>
-              <li>
-                <Link href="/register" className="text-white/70 hover:text-white transition">
-                  Register
-                </Link>
-              </li>
+            <ul className="mt-5 space-y-3 text-sm">
+              {[
+                { href: "/events", label: "Events" },
+                { href: "/presenters", label: "Presenters" },
+                { href: "/resources", label: "Resources" },
+                { href: "/register", label: "Register" },
+              ].map((l) => (
+                <li key={l.href}>
+                  <Link
+                    href={l.href}
+                    className="text-white/70 hover:text-white transition inline-flex items-center gap-2"
+                  >
+                    <span className="h-1.5 w-1.5 rounded-full bg-red-600/60" />
+                    {l.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
           {/* Contact */}
-          <div>
-            <h3 className="text-xs font-bold uppercase tracking-[0.2em] text-white/70">
+          <div className="md:col-span-4">
+            <h3 className="text-[11px] font-bold uppercase tracking-[0.22em] text-white/60">
               Contact
             </h3>
-            <ul className="mt-6 space-y-3 text-sm text-white/70">
+            <ul className="mt-5 space-y-3 text-sm text-white/70">
               <li>
-                <a
-                  href="mailto:info@gainafrica.org"
-                  className="hover:text-white transition"
-                >
+                <a href="mailto:info@gainafrica.org" className="hover:text-white transition">
                   info@gainafrica.org
                 </a>
               </li>
-              <li className="text-white/50">
-                Follow us on social platforms
-              </li>
+              <li className="text-white/50">Follow us on social platforms</li>
             </ul>
+
+            {/* Small CTA */}
+            <div className="mt-6">
+              <Link
+                href="/register"
+                className="inline-flex items-center justify-center rounded-2xl px-4 py-2.5 text-sm font-semibold
+                           bg-white text-black hover:bg-white/90 transition
+                           shadow-[0_12px_30px_rgba(0,0,0,0.25)]"
+              >
+                Register Now
+              </Link>
+            </div>
           </div>
         </div>
 
-        {/* Divider */}
-        <div className="mt-12 border-t border-white/10 pt-6 text-center text-sm text-white/50">
-          © {new Date().getFullYear()} GAiN Africa. All rights reserved.
+        {/* Bottom bar */}
+        <div className="mt-12 border-t border-white/10 pt-6">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-white/50">
+            <div>© {year} GAiN Tanzania. All rights reserved.</div>
+
+            <div className="flex items-center gap-5 text-xs">
+              <Link href="/privacy" className="hover:text-white transition">
+                Privacy
+              </Link>
+              <Link href="/terms" className="hover:text-white transition">
+                Terms
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
 
-      {/* Mobile Bottom CTA (refined) */}
+      {/* Mobile CTA */}
       <div className="fixed bottom-4 left-1/2 -translate-x-1/2 md:hidden z-50">
         <Link
           href="/register"
-          className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-blue-900 text-white font-semibold shadow-lg shadow-blue-900/20 hover:bg-blue-900/90 transition"
+          className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-white text-black font-semibold
+                     shadow-lg shadow-black/30 hover:bg-white/90 transition"
         >
           Register Now
         </Link>
