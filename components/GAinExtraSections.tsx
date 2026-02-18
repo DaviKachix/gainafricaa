@@ -71,7 +71,7 @@ export default function GAiNExtraSections() {
               "
             >
               <div className="flex items-start justify-between gap-4">
-                <h3 className="text-xl sm:text-2xl font-extrabold text-blue-950">
+                <h3 className="text-xl sm:text-2xl font-extrabold text-red-700">
                   Why We’re Gathering
                 </h3>
 
@@ -82,20 +82,20 @@ export default function GAiNExtraSections() {
               </div>
 
               <p className="mt-4 text-sm sm:text-base text-black/75 leading-relaxed">
-                GAiN Tanzania 2026 is where <span className="font-semibold text-blue-950">we come together</span> as
+                GAiN Tanzania 2026 is where <span className="font-semibold text-red-700">we come together</span> as
                 communicators, leaders, creatives, and digital missionaries with one shared goal — to strengthen how{" "}
-                <span className="font-semibold text-blue-950">we use media and technology for mission</span>.
+                <span className="font-semibold text-red-700">we use media and technology for mission</span>.
                 <br />
                 <br />
                 This is not only about ideas. It’s about what{" "}
-                <span className="font-semibold text-blue-950">you can take home and implement</span>. Together, we’ll
+                <span className="font-semibold text-red-700">you can take home and implement</span>. Together, we’ll
                 build real plans that support the mission of the{" "}
-                <span className="font-semibold text-blue-950">Seventh-day Adventist Church</span>.
+                <span className="font-semibold text-red-700">Seventh-day Adventist Church</span>.
               </p>
 
               <div className="mt-6 grid gap-4">
                 <InfoRow
-                  icon={<Calendar className="h-5 w-5 text-blue-950" />}
+                  icon={<Calendar className="h-5 w-5 text-red-700" />}
                   title="Dates"
                   text={
                     <>
@@ -105,12 +105,12 @@ export default function GAiNExtraSections() {
                   }
                 />
                 <InfoRow
-                  icon={<MapPin className="h-5 w-5 text-blue-950" />}
+                  icon={<MapPin className="h-5 w-5 text-red-700" />}
                   title="Venue"
                   text="University of Arusha, Tanzania"
                 />
                 <InfoRow
-                  icon={<Globe className="h-5 w-5 text-blue-950" />}
+                  icon={<Globe className="h-5 w-5 text-red-700" />}
                   title="Theme"
                   text="Integrated for Mission — because when we work together, our impact multiplies."
                 />
@@ -130,7 +130,7 @@ export default function GAiNExtraSections() {
               "
             >
               <div className="flex items-start justify-between gap-4">
-                <h3 className="text-xl sm:text-2xl font-extrabold text-blue-950">
+                <h3 className="text-xl sm:text-2xl font-extrabold text-red-700">
                   Join Us and Take Part
                 </h3>
 
@@ -158,9 +158,9 @@ export default function GAiNExtraSections() {
                   className="
                     inline-flex items-center justify-center gap-2
                     rounded-2xl px-5 py-3 text-sm font-bold
-                    bg-blue-950 text-white
+                    bg-red-700 text-white
                     shadow-[0_18px_45px_-28px_rgba(2,6,23,0.9)]
-                    hover:bg-blue-900 transition
+                    hover:bg-red-700 transition
                     focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-950/30
                   "
                 >
@@ -172,7 +172,7 @@ export default function GAiNExtraSections() {
                   className="
                     inline-flex items-center justify-center
                     rounded-2xl px-5 py-3 text-sm font-semibold
-                    bg-white text-blue-950 ring-1 ring-black/10
+                    bg-white text-red-700 ring-1 ring-black/10
                     hover:bg-black/5 transition
                     focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-950/25
                   "
@@ -202,7 +202,7 @@ function InfoRow({
     <div className="flex items-start gap-3 rounded-2xl bg-white px-4 py-3 ring-1 ring-black/5">
       <div className="mt-0.5 flex-shrink-0">{icon}</div>
       <div className="min-w-0">
-        <div className="text-sm font-semibold text-blue-950">{title}</div>
+        <div className="text-sm font-semibold text-red-700">{title}</div>
         <div className="mt-0.5 text-sm text-black/70 leading-relaxed">{text}</div>
       </div>
     </div>

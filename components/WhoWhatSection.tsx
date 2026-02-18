@@ -52,7 +52,7 @@ export default function WhoWhatSection() {
 
           {/* Content */}
           <div>
-            <h3 className="text-3xl font-bold mb-10 text-blue-900">Who Should Attend</h3>
+            <h3 className="text-3xl font-bold mb-10 text-red-700">Who Should Attend</h3>
 
             <motion.ul
               initial="hidden"
@@ -68,7 +68,7 @@ export default function WhoWhatSection() {
                   className="flex items-center gap-4"
                 >
                   <div className="flex-shrink-0">
-                    <Icon className="w-7 h-7 text-blue-900" />
+                    <Icon className="w-7 h-7 text-red-700" />
                   </div>
                   <span className="text-lg leading-snug text-gray-900">{text}</span>
                 </motion.li>
@@ -81,7 +81,7 @@ export default function WhoWhatSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <div className="order-2 lg:order-1">
-            <h3 className="text-3xl font-bold mb-10 text-blue-900">What to Expect</h3>
+            <h3 className="text-3xl font-bold mb-10 text-red-700">What to Expect</h3>
 
             <motion.ul
               initial="hidden"
@@ -97,7 +97,7 @@ export default function WhoWhatSection() {
                   className="flex items-center gap-4"
                 >
                   <div className="flex-shrink-0">
-                    <Icon className="w-7 h-7 text-blue-900" />
+                    <Icon className="w-7 h-7 text-red-700" />
                   </div>
                   <span className="text-lg leading-snug text-gray-900">{text}</span>
                 </motion.li>

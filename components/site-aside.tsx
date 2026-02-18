@@ -10,7 +10,7 @@ export default function SiteAside() {
         fixed top-0 right-0 h-screen
         w-20 lg:w-24
         z-40
-        bg-gradient-to-b from-slate-950 via-blue-950 to-black
+        bg-gradient-to-b from-slate-950 via-white to-black
         border-l border-white/10
         shadow-[0_0_60px_rgba(0,0,0,0.6)]
         flex-col

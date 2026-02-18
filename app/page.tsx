@@ -57,7 +57,7 @@ export default function Page() {
       transition={{ duration: 0.7 }}
       className="text-3xl sm:text-4xl lg:text-5xl font-black leading-tight text-gray-900"
     >
-      About <span className="text-blue-900">GAiN Tanzania</span>
+      About <span className="text-red-600">GAiN Tanzania</span>
       <span className="block mt-2 text-gray-800 font-semibold text-xl sm:text-2xl lg:text-3xl">
         2026 Conference
       </span>
@@ -72,13 +72,13 @@ export default function Page() {
       className="mt-6 text-gray-700 text-base sm:text-lg lg:text-xl leading-relaxed max-w-4xl mx-auto"
     >
       GAiN Tanzania brings together{" "}
-      <span className="font-semibold text-blue-900">Seventh-day Adventist media</span> and{" "}
-      <span className="font-semibold text-gray-900">communication professionals</span> from across Africa to{" "}
+      <span className="font-semibold text-red-600">Seventh-day Adventist media</span> and{" "}
+      <span className="font-semibold text-gray-900">communication professionals</span> from across Tanzania to{" "}
       <span className="font-semibold text-gray-800">share knowledge</span>,{" "}
-      <span className="font-semibold text-blue-900">build partnerships</span>, and{" "}
+      <span className="font-semibold text-red-600">build partnerships</span>, and{" "}
       <span className="font-semibold text-gray-900">advance the mission of the Church</span>. Our annual conference
       features <span className="font-semibold text-gray-800">keynotes</span>,{" "}
-      <span className="font-semibold text-blue-900">hands-on workshops</span>, and{" "}
+      <span className="font-semibold text-red-600">hands-on workshops</span>, and{" "}
       <span className="font-semibold text-gray-900">strategic networking</span>.
     </motion.p>
 
@@ -91,12 +91,12 @@ export default function Page() {
       transition={{ duration: 0.7, ease: "easeOut" }}
     >
       {[
-  { src: "/darkgain.png", alt: "GAiN Africa" },
-  { src: "/OneVoice27.jpeg", alt: "OneVoice27" },
-  { src: "/SDA-Logo.png", alt: "Seventh-day Adventist" },
-  { src: "/Hope Channel.png", alt: "Hope Channel" },
-  { src: "/Bible.png", alt: "Bible", light: true },     
-  { src: "/Mission.png", alt: "Mission", light: true },  
+  { src: "/darkgain.png"},
+  { src: "/OneVoice27.jpeg"},
+  { src: "/SDA-Logo.png" },
+  { src: "/Hope Channel.png" },
+  { src: "/Bible.png", light: true },     
+  { src: "/Mission.png", light: true },  
 ].map((icon, idx) => (
   <motion.a
     key={idx}
@@ -308,14 +308,14 @@ export default function Page() {
       transition={{ delay: 0.18, duration: 0.7 }}
       className="mt-10 sm:mt-12 flex flex-col items-center gap-2"
     >
-      <Button
-        asChild
-        className="h-11 rounded-2xl px-6 text-sm sm:text-base font-semibold bg-blue-900 hover:bg-blue-900/90 shadow-lg shadow-blue-900/10"
-      >
-        <a href="/register" className="inline-flex items-center gap-1">
-          Start Registration <ArrowRight className="h-4 w-4" />
-        </a>
-      </Button>
+     <Button
+  asChild
+  className="h-11 rounded-2xl px-6 text-sm sm:text-base font-semibold text-white bg-red-700 hover:bg-blue-900/90 shadow-lg shadow-red-700/10"
+>
+  <a href="/register" className="inline-flex items-center gap-1">
+    Start Registration <ArrowRight className="h-4 w-4" />
+  </a>
+</Button>
 
       <p className="text-xs sm:text-sm text-gray-500">
         Need help? Visit <a className="underline underline-offset-4" href="/resources">Resources</a> for guidance.
@@ -354,7 +354,7 @@ export default function Page() {
           Final Invitation
         </div>
 
-        <h2 className="mt-6 text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-blue-950 leading-tight">
+        <h2 className="mt-6 text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-red-700 leading-tight">
           Be Part of the Movement
         </h2>
 
@@ -370,9 +370,9 @@ export default function Page() {
               inline-flex items-center justify-center
               px-8 py-4 text-base font-bold
               rounded-2xl
-              bg-blue-950 text-white
+              bg-red-700 text-white
               shadow-[0_20px_50px_-20px_rgba(2,6,23,0.8)]
-              hover:bg-blue-900
+              hover:bg-black
               hover:-translate-y-0.5
               transition-all duration-300
             "

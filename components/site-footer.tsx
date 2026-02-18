@@ -115,7 +115,7 @@ export function SiteFooter() {
               <Link
                 href="/register"
                 className="inline-flex items-center justify-center rounded-2xl px-4 py-2.5 text-sm font-semibold
-                           bg-white text-black hover:bg-white/90 transition
+                           bg-white text-red-700 hover:bg-white/90 transition
                            shadow-[0_12px_30px_rgba(0,0,0,0.25)]"
               >
                 Register Now
@@ -145,7 +145,7 @@ export function SiteFooter() {
       <div className="fixed bottom-4 left-1/2 -translate-x-1/2 md:hidden z-50">
         <Link
           href="/register"
-          className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-white text-black font-semibold
+          className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-white text-red-700 font-semibold
                      shadow-lg shadow-black/30 hover:bg-white/90 transition"
         >
           Register Now

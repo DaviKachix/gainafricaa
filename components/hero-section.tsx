@@ -122,7 +122,7 @@ export function HeroSection() {
               className="mt-5 font-black tracking-tight leading-[1.05] text-white"
               style={{ fontSize: "clamp(2.3rem, 4.6vw, 4.7rem)" }}
             >
-              INTERGRATED <span className="text-blue-200">FOR MISSION</span>
+              INTERGRATED FOR <span className="text-red-500">MISSION</span>
             </motion.h1>
 
             {/* Copy */}
