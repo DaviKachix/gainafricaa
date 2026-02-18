@@ -15,8 +15,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className="bg-black text-white antialiased overflow-x-hidden relative">
-        {/* Sidebar */}
-        <SiteAside />
+        {/* Sidebar <SiteAside />*/}
+        
 
         {/* Header */}
         <div className="relative z-40 sm:pr-20 lg:pr-24">
