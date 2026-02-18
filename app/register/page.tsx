@@ -7,7 +7,7 @@ export default function RegisterRedirect() {
     const isLocal = window.location.hostname === "localhost";
 
     if (isLocal) {
-      window.location.href = "http://localhost:3000";
+      window.location.href = "http://localhost:8000";
     } else {
       window.location.href = "https://php-events.onrender.com";
     }
