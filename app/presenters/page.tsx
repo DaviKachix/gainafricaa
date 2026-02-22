@@ -53,12 +53,12 @@ function SpeakerCard({ s, i }: { s: Speaker; i: number }) {
       className="group overflow-hidden rounded-3xl bg-white ring-1 ring-black/10 shadow-[0_20px_60px_rgba(0,0,0,0.10)]"
     >
       {/* BIG CONFERENCE IMAGE */}
-      <div className="relative w-full h-72 sm:h-80 lg:h-84 overflow-hidden">
+      <div className="relative flex justify-center w-full h-72 sm:h-80 lg:h-84 overflow-hidden">
         <Image
           src={img}
           alt={s.name}
           fill
-          className="object-cover group-hover:scale-105 transition-transform duration-500"
+          className="object-cover object-contain object-[center_30%] group-hover:scale-105 transition-transform duration-500"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
       </div>
