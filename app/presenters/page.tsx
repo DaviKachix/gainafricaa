@@ -30,13 +30,13 @@ const SPEAKERS: Speaker[] = [
   {
     name: "Haggai Abuto",
     title: "ICT Director",
-    org: "East-Central Africa Region (ECD)",
+    org: "East-Central African Division-ECD",
     image: "/Haggai.jpg",
   },
   {
     name: "Pastor Christopher Ungani",
-    title: "Director, Hope Media Network",
-    org: "East-Central Africa Division",
+    title: "Director, Communication and Media Evangelism-ECD",
+    org: "East-Central African Division",
     image: "/Ungani.jpg",
   },
 ];

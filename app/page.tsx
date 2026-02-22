@@ -3,7 +3,6 @@
 import { HeroSection } from "@/components/hero-section";
 import { SiteHeader } from "@/components/site-header";
 //import { SiteFooter } from "@/components/site-footer";
-import SiteAside from "@/components/site-aside";
 import WhoWhatSection from "@/components/WhoWhatSection";
 import { AnimatePresence, motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
@@ -25,7 +24,6 @@ export default function Page() {
 
   return (
     <div className="relative min-h-screen bg-white text-black font-sans antialiased overflow-x-hidden">
-      <SiteAside />
       <SiteHeader />
 
       <AnimatePresence mode="wait">
