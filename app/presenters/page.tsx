@@ -16,15 +16,15 @@ type Speaker = {
 /* ✅ ORDER UPDATED */
 const SPEAKERS: Speaker[] = [
   {
-    name: "Dr Sam Neves",
-    title: "Vice President for Advancement & Communication",
-    org: "Hope Channel International",
+    name: "Pastor Sam Neves,PHD",
+    title: "Vice President",
+    org: "Hope Channel International,Inc.",
     image: "./sam-neves.jpg",
   },
   {
     name: "Ramiro Quero",
-    title: "Associate for Digital Technologies and Learning Communities",
-    org: "Andrews University",
+    title: "Director of Network Strategies,Development, and Training",
+    org: "Hope Channel International, Inc.",
     image: "./ramiro-quero.jpg",
   },
   {
@@ -34,7 +34,7 @@ const SPEAKERS: Speaker[] = [
     image: "/Haggai.jpg",
   },
   {
-    name: "Dr Christopher Ngani",
+    name: "Pastor Christopher Ugani",
     title: "Director, Hope Media Network",
     org: "East-Central Africa Division",
     image: "/speakers/christopher-ngani.jpg",
