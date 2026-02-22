@@ -34,7 +34,7 @@ const SPEAKERS: Speaker[] = [
     image: "/Haggai.jpg",
   },
   {
-    name: "Pastor Christopher Ugani",
+    name: "Pastor Christopher Ungani",
     title: "Director, Hope Media Network",
     org: "East-Central Africa Division",
     image: "/Ungani.jpg",
