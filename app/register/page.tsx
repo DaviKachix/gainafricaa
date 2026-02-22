@@ -9,8 +9,9 @@ export default function RegisterRedirect() {
     if (isLocal) {
       window.location.href = "http://localhost:8000";
     } else {
-      window.location.href = "https://php-events.onrender.com";
-    }
+      window.location.href = "https://events.ntucadventist.org";
+    } 
+
   }, []);
 
   return null;

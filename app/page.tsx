@@ -310,7 +310,7 @@ export default function Page() {
     >
      <Button
   asChild
-  className="h-11 rounded-2xl px-6 text-sm sm:text-base font-semibold text-white bg-red-700 hover:bg-blue-900/90 shadow-lg shadow-red-700/10"
+  className="h-11 rounded-2xl px-6 text-sm sm:text-base font-semibold text-white bg-red-700 hover:bg-black/90 shadow-lg shadow-red-700/10"
 >
   <a href="/register" className="inline-flex items-center gap-1">
     Start Registration <ArrowRight className="h-4 w-4" />
