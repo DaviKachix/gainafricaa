@@ -104,10 +104,9 @@ export function SiteFooter() {
             <ul className="mt-5 space-y-3 text-sm text-white/70">
               <li>
                 <a href="mailto:info@gainafrica.org" className="hover:text-white transition">
-                  info@gainafrica.org
+                  gain@ntucadventist.org
                 </a>
               </li>
-              <li className="text-white/50">Follow us on social platforms</li>
             </ul>
 
             {/* Small CTA */}
