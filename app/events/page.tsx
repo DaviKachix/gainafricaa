@@ -18,7 +18,7 @@ export default function EventsPage() {
     <main className="relative min-h-screen bg-gray-50 overflow-hidden">
       {/* Soft background accents */}
       <div className="absolute inset-0">
-        <div className="absolute -top-28 left-1/2 h-[520px] w-[760px] -translate-x-1/2 rounded-full bg-blue-900/10 blur-3xl" />
+        <div className="absolute -top-28 left-1/2 h-[520px] w-[760px] -translate-x-1/2 rounded-full bg-red-700/10 blur-3xl" />
         <div className="absolute -bottom-40 -left-24 h-[420px] w-[420px] rounded-full bg-slate-900/10 blur-3xl" />
         <div className="absolute inset-0 bg-[radial-gradient(900px_420px_at_50%_0%,rgba(2,6,23,0.06),transparent_60%)]" />
       </div>
@@ -45,7 +45,7 @@ export default function EventsPage() {
           <p className="mt-4 max-w-3xl mx-auto text-gray-700 text-base sm:text-lg leading-relaxed">
             Explore the pre-event experience and the main conference days. Our sessions are designed for
             <span className="font-semibold text-gray-900"> mission impact</span>,{" "}
-            <span className="font-semibold text-blue-900">media excellence</span>, and{" "}
+            <span className="font-semibold text-red-700">media excellence</span>, and{" "}
             <span className="font-semibold text-gray-900">collaboration</span>.
           </p>
 
@@ -69,7 +69,7 @@ export default function EventsPage() {
           </div>
 
           <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
-            <Button asChild className="h-11 rounded-2xl px-6 bg-blue-900 hover:bg-blue-900/90 font-semibold">
+            <Button asChild className="h-11 rounded-2xl px-6 bg-red-700 hover:bg-red-700/90 font-semibold">
               <Link href="/register" className="inline-flex items-center gap-2">
                 Register <ArrowRight className="h-4 w-4" />
               </Link>
@@ -117,7 +117,7 @@ export default function EventsPage() {
                 <span className="rounded-full bg-white/85 px-3 py-1 text-[11px] font-bold tracking-wide text-gray-900 ring-1 ring-black/10">
                   Pre-Event
                 </span>
-                <span className="rounded-full bg-blue-900/90 px-3 py-1 text-[11px] font-bold tracking-wide text-white ring-1 ring-white/10">
+                <span className="rounded-full bg-red-700/90 px-3 py-1 text-[11px] font-bold tracking-wide text-white ring-1 ring-white/10">
                   OneVoice Marathon
                 </span>
               </div>
@@ -137,9 +137,9 @@ export default function EventsPage() {
 
             {/* Text card */}
             <div className="text-left">
-              <div className="inline-flex items-center gap-2 rounded-full bg-blue-900/10 ring-1 ring-blue-900/15 px-3 py-1.5">
-                <Flag className="h-4 w-4 text-blue-900" />
-                <span className="text-[11px] sm:text-xs font-semibold tracking-[0.18em] uppercase text-blue-900">
+              <div className="inline-flex items-center gap-2 rounded-full bg-red-700/10 ring-1 ring-red-700/15 px-3 py-1.5">
+                <Flag className="h-4 w-4 text-red-700" />
+                <span className="text-[11px] sm:text-xs font-semibold tracking-[0.18em] uppercase text-red-700">
                   OneVoice Marathon (Pre-Event)
                 </span>
               </div>
@@ -155,13 +155,13 @@ export default function EventsPage() {
 
               <div className="mt-5 space-y-2 text-sm text-gray-700">
                 <div className="flex items-center gap-2">
-                  <Calendar className="h-4 w-4 text-blue-900" />
+                  <Calendar className="h-4 w-4 text-red-700" />
                   <span>
                     <span className="font-semibold text-gray-900">Date:</span> March 31, 2026
                   </span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <MapPin className="h-4 w-4 text-blue-900" />
+                  <MapPin className="h-4 w-4 text-red-700" />
                   <span>
                     <span className="font-semibold text-gray-900">Location:</span> University of Arusha, Arusha, Tanzania
                   </span>
@@ -188,7 +188,7 @@ export default function EventsPage() {
               </div>
 
               <div className="mt-7 flex flex-col sm:flex-row gap-3">
-                <Button asChild className="h-11 rounded-2xl px-6 bg-blue-900 hover:bg-blue-900/90 font-semibold">
+                <Button asChild className="h-11 rounded-2xl px-6 bg-red-700 hover:bg-red-700/90 font-semibold">
                   <Link href="/register" className="inline-flex items-center gap-2">
                     Join Pre-Event <ArrowRight className="h-4 w-4" />
                   </Link>
@@ -222,7 +222,7 @@ export default function EventsPage() {
               <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6">
                 <div className="text-left">
                   <div className="inline-flex items-center gap-2 rounded-full bg-gray-900/5 ring-1 ring-black/10 px-3 py-1.5">
-                    <Mic className="h-4 w-4 text-blue-900" />
+                    <Mic className="h-4 w-4 text-red-700" />
                     <span className="text-[11px] sm:text-xs font-semibold tracking-[0.18em] uppercase text-gray-800">
                       Main Conference
                     </span>
@@ -239,13 +239,13 @@ export default function EventsPage() {
 
                   <div className="mt-5 space-y-2 text-sm text-gray-700">
                     <div className="flex items-center gap-2">
-                      <Calendar className="h-4 w-4 text-blue-900" />
+                      <Calendar className="h-4 w-4 text-red-700" />
                       <span>
                         <span className="font-semibold text-gray-900">Dates:</span> April 1–4, 2026
                       </span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <MapPin className="h-4 w-4 text-blue-900" />
+                      <MapPin className="h-4 w-4 text-red-700" />
                       <span>
                         <span className="font-semibold text-gray-900">Venue:</span> University of Arusha, Arusha, Tanzania
                       </span>
@@ -254,7 +254,7 @@ export default function EventsPage() {
                 </div>
 
                 <div className="flex flex-col gap-3">
-                  <Button asChild className="h-11 rounded-2xl px-6 bg-blue-900 hover:bg-blue-900/90 font-semibold">
+                  <Button asChild className="h-11 rounded-2xl px-6 bg-red-700 hover:bg-red-700/90 font-semibold">
                     <Link href="/register" className="inline-flex items-center gap-2">
                       Register <ArrowRight className="h-4 w-4" />
                     </Link>

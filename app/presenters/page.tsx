@@ -16,9 +16,9 @@ type Speaker = {
 /* ✅ ORDER UPDATED */
 const SPEAKERS: Speaker[] = [
   {
-    name: "Pastor Sam Neves,PHD",
+    name: "Pastor Sam Neves, PHD",
     title: "Vice President",
-    org: "Hope Channel International,Inc.",
+    org: "Hope Channel International, Inc.",
     image: "./sam-neves.jpg",
   },
   {
@@ -58,7 +58,7 @@ function SpeakerCard({ s, i }: { s: Speaker; i: number }) {
           src={img}
           alt={s.name}
           fill
-          className="object-cover object-contain object-[center_30%] group-hover:scale-105 transition-transform duration-500"
+          className="object-cover object-contain object-[center_25%] group-hover:scale-105 transition-transform duration-500"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
       </div>

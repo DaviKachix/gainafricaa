@@ -45,7 +45,7 @@ export default function ResourcesPage() {
     <main className="relative min-h-screen bg-gray-50 overflow-hidden">
       {/* Soft Background Accent */}
       <div className="absolute inset-0">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 h-[500px] w-[700px] bg-blue-900/10 blur-3xl rounded-full" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 h-[500px] w-[700px] bg-red-700/10 blur-3xl rounded-full" />
       </div>
 
       <div className="relative z-10 max-w-6xl mx-auto px-6 py-28">
@@ -73,8 +73,8 @@ export default function ResourcesPage() {
             whileHover={{ y: -4 }}
             className="rounded-3xl bg-white p-8 shadow-[0_14px_40px_rgba(0,0,0,0.08)] ring-1 ring-black/5"
           >
-            <div className="h-14 w-14 rounded-full bg-blue-900/10 ring-1 ring-blue-900/20 flex items-center justify-center mb-5">
-              <BookOpen className="h-6 w-6 text-blue-900" />
+            <div className="h-14 w-14 rounded-full bg-red-700/10 ring-1 ring-red-700/20 flex items-center justify-center mb-5">
+              <BookOpen className="h-6 w-6 text-red-700" />
             </div>
 
             <h3 className="text-xl font-bold text-gray-900">Conference Guide</h3>
@@ -98,8 +98,8 @@ export default function ResourcesPage() {
             whileHover={{ y: -4 }}
             className="rounded-3xl bg-white p-8 shadow-[0_14px_40px_rgba(0,0,0,0.08)] ring-1 ring-black/5"
           >
-            <div className="h-14 w-14 rounded-full bg-blue-900/10 ring-1 ring-blue-900/20 flex items-center justify-center mb-5">
-              <ImageIcon className="h-6 w-6 text-blue-900" />
+            <div className="h-14 w-14 rounded-full bg-red-700/10 ring-1 ring-red-700/20 flex items-center justify-center mb-5">
+              <ImageIcon className="h-6 w-6 text-red-700" />
             </div>
 
             <h3 className="text-xl font-bold text-gray-900">Media Kit</h3>
@@ -123,8 +123,8 @@ export default function ResourcesPage() {
             whileHover={{ y: -4 }}
             className="rounded-3xl bg-white p-8 shadow-[0_14px_40px_rgba(0,0,0,0.08)] ring-1 ring-black/5"
           >
-            <div className="h-14 w-14 rounded-full bg-blue-900/10 ring-1 ring-blue-900/20 flex items-center justify-center mb-5">
-              <FileText className="h-6 w-6 text-blue-900" />
+            <div className="h-14 w-14 rounded-full bg-red-700/10 ring-1 ring-red-700/20 flex items-center justify-center mb-5">
+              <FileText className="h-6 w-6 text-red-700" />
             </div>
 
             <h3 className="text-xl font-bold text-gray-900">Session Slides</h3>
@@ -148,8 +148,8 @@ export default function ResourcesPage() {
             whileHover={{ y: -4 }}
             className="rounded-3xl bg-white p-8 shadow-[0_14px_40px_rgba(0,0,0,0.08)] ring-1 ring-black/5"
           >
-            <div className="h-14 w-14 rounded-full bg-blue-900/10 ring-1 ring-blue-900/20 flex items-center justify-center mb-5">
-              <Video className="h-6 w-6 text-blue-900" />
+            <div className="h-14 w-14 rounded-full bg-red-700/10 ring-1 ring-red-700/20 flex items-center justify-center mb-5">
+              <Video className="h-6 w-6 text-red-700" />
             </div>
 
             <h3 className="text-xl font-bold text-gray-900">Recordings</h3>
@@ -177,7 +177,7 @@ export default function ResourcesPage() {
           className="mt-20 text-center"
         >
           <div className="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 ring-1 ring-black/10 shadow-sm">
-            <Download className="h-4 w-4 text-blue-900" />
+            <Download className="h-4 w-4 text-red-700" />
             <span className="text-sm font-semibold text-gray-800">Resources will be updated regularly.</span>
           </div>
 
@@ -188,7 +188,7 @@ export default function ResourcesPage() {
           <div className="mt-8">
             <Button
               asChild
-              className="rounded-2xl px-6 py-3 bg-blue-900 hover:bg-blue-900/90 text-white font-semibold"
+              className="rounded-2xl px-6 py-3 bg-red-700 hover:bg-red-700/90 text-white font-semibold"
             >
               <Link href="/register">Register for Conference</Link>
             </Button>
@@ -232,8 +232,8 @@ export default function ResourcesPage() {
                 </div>
 
                 <div className="p-7 text-center">
-                  <div className="mx-auto h-14 w-14 rounded-full bg-blue-900/10 ring-1 ring-blue-900/15 grid place-items-center">
-                    <Download className="h-6 w-6 text-blue-900" />
+                  <div className="mx-auto h-14 w-14 rounded-full bg-red-700/10 ring-1 ring-red-700/15 grid place-items-center">
+                    <Download className="h-6 w-6 text-red-700" />
                   </div>
 
                   <h3 className="mt-4 text-xl font-black text-gray-900">Coming Soon</h3>
@@ -244,7 +244,7 @@ export default function ResourcesPage() {
                   <div className="mt-6 flex gap-3 justify-center">
                     <Button
                       onClick={closeModal}
-                      className="h-11 rounded-2xl px-6 bg-blue-900 hover:bg-blue-900/90 text-white font-semibold"
+                      className="h-11 rounded-2xl px-6 bg-red-700 hover:bg-red-700/90 text-white font-semibold"
                     >
                       Close
                     </Button>

@@ -71,15 +71,9 @@ export default function Page() {
       transition={{ delay: 0.08, duration: 0.7 }}
       className="mt-6 text-gray-700 text-base sm:text-lg lg:text-xl leading-relaxed max-w-4xl mx-auto"
     >
-      GAiN Tanzania brings together{" "}
-      <span className="font-semibold text-red-600">Seventh-day Adventist media</span> and{" "}
-      <span className="font-semibold text-gray-900">communication professionals</span> from across Tanzania to{" "}
-      <span className="font-semibold text-gray-800">share knowledge</span>,{" "}
-      <span className="font-semibold text-red-600">build partnerships</span>, and{" "}
-      <span className="font-semibold text-gray-900">advance the mission of the Church</span>. Our annual conference
-      features <span className="font-semibold text-gray-800">keynotes</span>,{" "}
-      <span className="font-semibold text-red-600">hands-on workshops</span>, and{" "}
-      <span className="font-semibold text-gray-900">strategic networking</span>.
+     <p>
+  GAiN Tanzania brings together Seventh-day Adventist media and communication professionals from across Tanzania to share knowledge, build partnerships, and advance the mission of the Church. Our annual conference features keynotes, hands-on workshops, and strategic networking.
+</p>
     </motion.p>
 
     {/* Logos Row (all logos round + fully visible + smooth) */}
