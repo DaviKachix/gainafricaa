@@ -21,12 +21,6 @@ const SPEAKERS: Speaker[] = [
     org: "Hope Channel International, Inc.",
     image: "./sam-neves.jpg",
   },
-   {
-    name: "Philip Mathew ",
-    title: "Assistant to the President",
-    org: "Hope Channel International, Inc.",
-    image: "/Philip.jpg",
-  },
   {
     name: "Ramiro Quero",
     title: "Director of Network Strategies,Development, and Training",
