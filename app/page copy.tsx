@@ -72,9 +72,67 @@ export default function Page() {
      <p>
   GAiN Tanzania brings together Seventh-day Adventist media and communication professionals from across Tanzania to share knowledge, build partnerships, and advance the mission of the Church. Our annual conference features keynotes, hands-on workshops, and strategic networking.
 </p>
-  </motion.p>
+    </motion.p>
 
-  
+    {/* Logos Row (all logos round + fully visible + smooth) */}
+    <motion.div
+      className="mt-10 sm:mt-12 flex flex-wrap justify-center gap-4 sm:gap-6"
+      initial={{ opacity: 0, y: 10 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.35 }}
+      transition={{ duration: 0.7, ease: "easeOut" }}
+    >
+      {[
+  { src: "/darkgain.png"},
+  { src: "/OneVoice27.jpeg"},
+  { src: "/SDA-Logo.png" },
+  { src: "/Hope Channel.png" },
+  { src: "/Bible.png", light: true },     
+  { src: "/Mission.png", light: true },  
+].map((icon, idx) => (
+  <motion.a
+    key={idx}
+    href={icon.src}
+    target="_blank"
+    rel="noreferrer"
+    whileHover={{ y: -2 }}
+    transition={{ duration: 0.2 }}
+    className="group"
+  >
+    <div
+      className={cn(
+        "h-16 w-16 sm:h-20 sm:w-20 lg:h-24 lg:w-24",
+        "rounded-full overflow-hidden",
+        "ring-1 ring-black/10",
+        "shadow-[0_10px_30px_rgba(0,0,0,0.08)]",
+        "transition duration-200",
+        "group-hover:shadow-[0_16px_40px_rgba(0,0,0,0.12)]",
+        // ✅ Different background if logo is white
+     icon.light
+  ? "bg-black ring-1 ring-white/10"
+  : "bg-white"
+
+      )}
+    >
+      <img
+        src={icon.src}
+        alt={icon.alt}
+        className={cn(
+          "h-full w-full object-contain",
+          icon.light && "drop-shadow-[0_2px_6px_rgba(0,0,0,0.15)]"
+        )}
+        loading="lazy"
+      />
+    </div>
+
+    <div className="mt-2 text-[11px] sm:text-xs font-semibold text-gray-600 group-hover:text-gray-800 transition">
+      {icon.alt}
+    </div>
+  </motion.a>
+))}
+
+    </motion.div>
+
     {/* Small divider / calm note */}
     <motion.div
       initial={{ opacity: 0 }}
@@ -84,6 +142,9 @@ export default function Page() {
       className="mt-10 flex items-center justify-center gap-3 text-xs sm:text-sm text-gray-500"
     >
       <span className="h-px w-10 bg-gray-300" />
+      <span className="font-semibold tracking-wide uppercase">
+        United in Mission • Excellence • Service
+      </span>
       <span className="h-px w-10 bg-gray-300" />
     </motion.div>
   </div>
