@@ -8,8 +8,12 @@ import { ConvexClientProvider } from "@/components/convex-client-provider";
 export const metadata: Metadata = {
   title: "GAiN Tanzania 2026",
   description: "Integrated for Mission — GAiN Tanzania 2026 Conference",
+  icons: {
+    icon: "/logo.png",          // favicon
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
 };
-
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
