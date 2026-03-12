@@ -9,9 +9,9 @@ export const metadata: Metadata = {
   title: "GAiN Tanzania 2026",
   description: "Integrated for Mission — GAiN Tanzania 2026 Conference",
   icons: {
-    icon: "/logo.png",          // favicon
-    shortcut: "/logo.png",
-    apple: "/logo.png",
+    icon: "/icon.jpg",          
+    shortcut: "/icon.jpg",
+    apple: "/apple-icon.png",
   },
 };
 export default function RootLayout({ children }: { children: React.ReactNode }) {

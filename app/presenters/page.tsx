@@ -45,6 +45,59 @@ const SPEAKERS: Speaker[] = [
     org: "East-Central African Division",
     image: "/Ogwal.jpg",
   },
+  {
+    name: "Pr,Dr David Mpwani",
+    title: "President of the Northern Tanzania Union Conference",
+    org: "Northern Tanzania Union Conference",
+    image: "/mpwani.webp",
+  },
+  {
+    name: "Pr Joseph Mngwabi",
+    title: "President of the Southern Tanzania Union Mission",
+    org: "Southern Tanzania Union Mission",
+    image: "/mngwabi.webp",
+  },
+  {
+    name: "Pastor Enoch M. Sando",
+    title: "Executive Secretary of the Northern Tanzania Union Conference",
+    org: "Northern Tanzania Union Conference",
+    image: "/Sando.png",
+  },
+  
+  {
+    name: "Pastor Magulilo Mwakalonge",
+    title: "Executive Secretary of the Southern Tanzania Union Mission",
+    org: "Southern Tanzania Union Mission",
+    image: "/Mwakalonge.jpg",
+  },
+
+  {
+    name: "Elder Mathias Mavanza",
+    title: "Treasurer of the Northern Tanzania Union Conference",
+    org: "Northern Tanzania Union Conference",
+    image: "/Mavanza.jpg",
+  },
+  
+  {
+    name: "Elder Shabatu Msaki",
+    title: "Treasurer of the Southern Tanzania Union Mission",
+    org: "Southern Tanzania Union Mission",
+    image: "/Msaki.jpg",
+  },
+  {
+    name: "Elder Gideon Msambwa",
+    title: "Communication Director,NTUC",
+    org: "Northern Tanzania Union Conference",
+    image: "/Msambwa.jpg",
+  },
+  
+  {
+    name: "Pastor Nasibu James",
+    title: "Communication Director, STUM",
+    org: "Southern Tanzania Union Mission",
+    image: "/james.jpg",
+  },
+  
 ];
 
 function SpeakerCard({ s, i }: { s: Speaker; i: number }) {

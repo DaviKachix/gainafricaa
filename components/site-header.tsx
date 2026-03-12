@@ -13,7 +13,7 @@ const navigation = [
   { name: "Events", href: "/events" },
   { name: "Presenters", href: "/presenters" },
   { name: "Resources", href: "/resources" },
-  { name: "OneVoice27 Marathon", href: "/OneVoice27" }
+  { name: "OneVoice27 Fun Run", href: "/OneVoice27" }
 ];
 
 export function SiteHeader() {
