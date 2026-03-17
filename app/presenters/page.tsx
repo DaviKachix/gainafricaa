@@ -92,7 +92,7 @@ const SPEAKERS: Speaker[] = [
     name: "Elder Gideon Msambwa",
     title: "Communication Director",
     org: "Northern Tanzania Union Conference",
-    image: "/Msambwa.jpg",
+    image: "/msambwa.jpg",
   },
   {
     name: "Pastor Nasibu James",
