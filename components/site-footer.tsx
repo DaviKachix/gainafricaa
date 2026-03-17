@@ -106,6 +106,9 @@ export function SiteFooter() {
                 <a href="mailto:info@gainafrica.org" className="hover:text-white transition">
                   gain@ntucadventist.org
                 </a>
+                  <a href="tel:+255756505435" className="hover:text-white transition">
+                  +255 756 505 435
+                </a>
               </li>
             </ul>
 
