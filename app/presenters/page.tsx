@@ -34,12 +34,14 @@ const SPEAKERS: Speaker[] = [
     org: "Hope Channel International, Inc.",
     image: "/ramiro-quero.jpg",
   },
-  {
-    name: "Haggai Abuto",
-    title: "ICT Director",
-    org: "East-Central African Division - ECD",
-    image: "/Haggai.jpg",
+
+   {
+    name: "Felipe Eduardo Bassetti Silva",
+    title: "Manager of Network, Content & Strategic Relations.",
+    org: "Hope Channel International, Inc.",
+    image: "/Bassetti.jpg",
   },
+  
   {
     name: "Pastor Christopher Ungani",
     title: "Director, Communication and Media Evangelism",
@@ -52,6 +54,14 @@ const SPEAKERS: Speaker[] = [
     org: "East-Central African Division",
     image: "/Ogwal.jpg",
   },
+  
+ {
+    name: "Haggai Abuto",
+    title: "ICT Director",
+    org: "East-Central African Division - ECD",
+    image: "/Haggai.jpg",
+  },
+
   {
     name: "Pr. Dr David Mpwani",
     title: "President",

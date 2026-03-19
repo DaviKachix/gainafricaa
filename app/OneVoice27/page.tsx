@@ -143,9 +143,14 @@ export default function Page() {
                     asChild
                     className="h-12 rounded-2xl bg-red-700 px-6 text-sm font-semibold text-white shadow-[0_18px_45px_-18px_rgba(185,28,28,0.75)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-red-800"
                   >
-                    <a href="/register" className="inline-flex items-center gap-2">
-                      Register Now <ArrowRight className="h-4 w-4" />
-                    </a>
+                    <a 
+  href="https://events.ntucadventist.org/FunRun.php" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="inline-flex items-center gap-2"
+>
+  Register Now <ArrowRight className="h-4 w-4" />
+</a>
                   </Button>
 
                   <a
@@ -433,9 +438,14 @@ export default function Page() {
                   asChild
                   className="h-12 rounded-2xl bg-red-700 px-8 text-base font-bold text-white shadow-[0_18px_45px_-18px_rgba(185,28,28,0.75)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-red-800"
                 >
-                  <a href="/register" className="inline-flex items-center gap-2">
-                    Register Now <ArrowRight className="h-4 w-4" />
-                  </a>
+                 <a 
+  href="https://events.ntucadventist.org/FunRun.php" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="inline-flex items-center gap-2"
+>
+  Register Now <ArrowRight className="h-4 w-4" />
+</a>
                 </Button>
               </div>
             </div>
