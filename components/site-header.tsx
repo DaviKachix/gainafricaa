@@ -12,7 +12,7 @@ const navigation = [
   { name: "Home", href: "/" },
   { name: "Events", href: "/events" },
   { name: "Presenters", href: "/presenters" },
-  { name: "Resources", href: "/resources" },
+  //{ name: "Resources", href: "/resources" },
   { name: "OneVoice27 Fun Run", href: "/OneVoice27" }
 ];
 
