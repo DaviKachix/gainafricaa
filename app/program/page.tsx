@@ -223,7 +223,7 @@ const DAYS: Day[] = [
   },
 
   {
-    label: "Sat",
+    label: "Sabbath",
     date: "Apr 4",
     title: "Sabbath: Worship,",
     subtitle: "Awards & Grand Concert",
@@ -271,21 +271,13 @@ export default function ProgramPage() {
     <main className="min-h-screen bg-white">
 
       {/* Hero */}
-      <div className="bg-red-700 text-white">
-        <div className="max-w-6xl mx-auto px-6 py-12 md:py-16">
-          <p className="text-red-300 text-xs font-semibold tracking-[0.2em] uppercase mb-3">
-            University of Arusha &nbsp;&middot;&nbsp; Tanzania
-          </p>
-          <h1 className="text-4xl md:text-5xl font-black tracking-tight leading-none">
-            GAiN Tanzania 2026
-          </h1>
-          <p className="text-red-200 text-sm mt-3">
-            Tentative Program &nbsp;&middot;&nbsp; March 31 &ndash; April 4, 2026
-          </p>
-        </div>
-      </div>
-
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8">
+<br>
+</br>
+<br>
+</br>
+<br>
+</br> 
+     <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8">
 
         {/* Tabs */}
         <div className="flex gap-2 overflow-x-auto pb-1 mb-8">
@@ -294,7 +286,7 @@ export default function ProgramPage() {
               key={i}
               onClick={() => setActive(i)}
               className={[
-                "flex-shrink-0 flex flex-col items-center px-5 py-3 rounded-xl border text-sm font-semibold transition-all",
+                "flex-shrink-0 flex flex-col items-center px-16 py-2 rounded-xl border text-sm font-semibold transition-all",
                 active === i
                   ? "bg-red-700 border-red-700 text-white shadow-md shadow-red-200"
                   : "bg-white border-gray-200 text-gray-500 hover:border-red-300 hover:text-red-700",
