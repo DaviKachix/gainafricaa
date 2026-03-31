@@ -16,7 +16,7 @@ type Speaker = {
 /* SPEAKERS */
 const SPEAKERS: Speaker[] = [
     {
-    name: "Ayssa Truman",
+    name: "Alyssa Truman",
     title: "Director, Communication Department of the General Conference of Seventh-day Adventist",
     org: "General Conference of Seventh-day Adventist, GC.",
     image: "/Trumann.jpg",
