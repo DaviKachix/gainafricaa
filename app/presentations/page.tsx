@@ -15,7 +15,7 @@ const PRESENTATIONS: Presentation[] = [
     title: "Integrating Digital Tools Into Pastoral Ministry",
     presenter: "Pr Azza Nyamakababi",
     file: encodeURI(
-      "/gaindocs/03.02.2026 Intergrating Digital Tools Into Pastoral Ministry.pdf"
+      "/gaindocs/2026 Intergrating Digital Tools Into Pastoral Ministry.pdf"
     ),
     preview:
       "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80",
@@ -47,7 +47,7 @@ const PRESENTATIONS: Presentation[] = [
     title: "Mission Intelligence HCI Slide Deck",
     presenter: "Ramiro Quero",
     file: encodeURI(
-      "/gaindocs/Quero Mission Intelligence HCI Slide Deck GAiN 2026 TZ.pptx"
+      "/gaindocs/Quero Mission Intelligence HCI Slide Deck GAiN 2026 TZ.pdf"
     ),
     preview:
       "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1200&q=80",
