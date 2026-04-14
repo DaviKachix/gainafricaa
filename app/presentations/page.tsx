@@ -16,7 +16,7 @@ const PRESENTATIONS: Presentation[] = [
     presenter: "Pr Azza Nyamakababi",
     file: "https://docs.google.com/presentation/d/1CDhUBbVHfh9IBbX-yexwtmMN1m-uB3BW/edit?usp=drive_link&ouid=113483345363854961033&rtpof=true&sd=true",
     preview:
-      "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80",
+      "gain2.jpg",
   },
   {
     title: "Digital Fishermen",
@@ -30,21 +30,21 @@ const PRESENTATIONS: Presentation[] = [
     presenter: "Sam Neves, PhD",
     file: "https://drive.google.com/file/d/1O0ZRh0affQElNkFN3InxdbuxSVZ78zmj/view?usp=drive_link",
     preview:
-      "https://images.unsplash.com/photo-1504052434569-70ad5836ab65?auto=format&fit=crop&w=1200&q=80",
+      "compressed_sam.jpg",
   },
   {
     title: "GAiN Opening Speech 2026",
     presenter: "Pr David Mpwani",
     file: "https://docs.google.com/presentation/d/1n_NMkAbcWOqUp6l_5O-nRs1LetnsaZKU/edit?usp=drive_link&ouid=113483345363854961033&rtpof=true&sd=true",
     preview:
-      "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80",
+      "gain1.jpg",
   },
   {
     title: "Mission Intelligence HCI Slide Deck",
     presenter: "Ramiro Quero",
     file: "https://docs.google.com/presentation/d/1v6JLpwq3OZxcVniry3Rj5Zfwk56LVftx/edit?usp=drive_link&ouid=113483345363854961033&rtpof=true&sd=true",
     preview:
-      "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1200&q=80",
+      "compressed_bassetiII.jpg",
   },
 ];
 
