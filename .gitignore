@@ -28,3 +28,10 @@ next-env.d.ts
 
 # admin files
 /app/admin*
+
+# Next.js build output
+.next/
+out/
+
+# turbopack / build artifacts
+public/presenters_files/
