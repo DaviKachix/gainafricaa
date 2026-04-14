@@ -14,7 +14,8 @@ const navigation = [
   { name: "Presenters", href: "/presenters" },
   { name: "Program Schedule", href: "/program" },
   { name: "OneVoice27 Fun Run", href: "/OneVoice27" },
-  { name: "Gallery", href: "/gallery" }
+  { name: "Gallery", href: "/gallery" },
+  { name: "Presentations", href: "/presentations" }
 ];
 
 export function SiteHeader() {
