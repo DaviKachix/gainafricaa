@@ -150,7 +150,7 @@ export default function PresentationsPage() {
 
       {/* Footer */}
       <footer className="border-t border-gray-100 mt-10 py-6 text-center text-xs text-gray-400 tracking-wide">
-        GAiN Tanzania 2026 · Presentation Materials · Subject to availability
+        GAiN Tanzania 2026 · Presentation Materials 
       </footer>
     </main>
   );
