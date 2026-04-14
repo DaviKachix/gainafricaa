@@ -15,7 +15,7 @@ const PRESENTATIONS: Presentation[] = [
     title: "Integrating Digital Tools Into Pastoral Ministry",
     presenter: "Pr Azza Nyamakababi",
     file: encodeURI(
-      "/gaindocs/03.02.2026 Intergrating Digital Tools Into Pastoral Ministry.pptx"
+      "/gaindocs/03.02.2026 Intergrating Digital Tools Into Pastoral Ministry.pdf"
     ),
     preview:
       "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80",
